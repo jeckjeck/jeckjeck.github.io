@@ -1,0 +1,8 @@
+name: Publish Document
+title:
+account: rpubs
+server: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/280558/bc138b84f2f04efeba4f0d78b9dae2cb
+bundleId: https://api.rpubs.com/api/v1/document/280558/bc138b84f2f04efeba4f0d78b9dae2cb
+url: http://rpubs.com/jeck/280558
+when: 1496078733.00567

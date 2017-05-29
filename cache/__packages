@@ -1,0 +1,7 @@
+base
+knitr
+dplyr
+reshape2
+ggplot2
+gplots
+ROCR
