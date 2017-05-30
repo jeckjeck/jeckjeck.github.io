@@ -146,25 +146,32 @@ print(c(accuracy= acc, cutoff = cutoff))
 
 ```
 
-### Syfte & Fråge
+### Syfte & Frågeställning
+
+<br><br>
+
+- Vilken inverkan på matchresultatet har skillnaden i MMR mellan spelare i ett lag i förhållande till vilken lane spelaren oftast vistas på?
 
 
-- Vilka faktorer spelar storst roll gällande valet av favoritrestaurang?
-
-- Till exempel hur påverkar , valet av favoritrestaurang.
 
 
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 
 ---
 
 ### Centrala begrepp
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+MMR - Skicklighetspoäng
+
+Lanes - vägar mellan baserna
+
+<br><br><br><br><br><br><br><br><br><br><br>
 
 ---
 
-### Centrala begrepp forts.
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+### Karta
+
+<img src="minimap.jpg" height="463px" width="400px" />
 
 ---
 

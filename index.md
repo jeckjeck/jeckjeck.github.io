@@ -42,25 +42,32 @@ framework   : io2012
 
 
 
-### Syfte & Fråge
+### Syfte & Frågeställning
+
+<br><br>
+
+- Vilken inverkan på matchresultatet har skillnaden i MMR mellan spelare i ett lag i förhållande till vilken lane spelaren oftast vistas på?
 
 
-- Vilka faktorer spelar storst roll gällande valet av favoritrestaurang?
-
-- Till exempel hur påverkar , valet av favoritrestaurang.
 
 
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 
 ---
 
 ### Centrala begrepp
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+MMR - Skicklighetspoäng
+
+Lanes - vägar mellan baserna
+
+<br><br><br><br><br><br><br><br><br><br><br>
 
 ---
 
-### Centrala begrepp forts.
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+### Karta
+
+<img src="minimap.jpg" height="463px" width="400px" />
 
 ---
 
@@ -76,43 +83,43 @@ framework   : io2012
 
 ### ROC
 
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png)
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png)
 
 ---
 
 ### Resultat mid
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
 
 ---
 
 ### Resultat safelane
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
+![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3-1.png)
 
 ----
 
 ### Resultat hardlane
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
+![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4-1.png)
 
 ---
 
 ### Resultat djungel
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-5](assets/fig/unnamed-chunk-5-1.png)
 
 ---
 
 ### Resultat oddskvoter
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6-1.png)
 
 ---
 
 ### Resultat ROC
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7](assets/fig/unnamed-chunk-7-1.png)
 
 ---
 
