@@ -36,11 +36,11 @@
   -webkit-box-shadow: 0 0 0 1px #1d212e inset,0 0 2px 1px #fff inset,0 0 1em #888;
   -moz-box-shadow: 0 0 0 1px #1d212e inset,0 0 2px 1px #fff inset,0 0 1em #888;
   box-shadow: 0 0 0 1px #1d212e inset,0 0 2px 1px #fff inset,0 0 1em #888;
-  color: #FFF;
+  color: #000000;
   display: block;
   padding: .6em 3.5em;
   position: absolute;
-  font: bold .82em sans-serif;
+  font: bold .82em Korolev;
   text-align: center;
   text-decoration: none;
   text-shadow: 1px -1px 8px rgba(0,0,0,0.60);

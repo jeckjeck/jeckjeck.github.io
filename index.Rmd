@@ -17,7 +17,28 @@ framework   : io2012
 .title-slide  {
   color: #000000;
 }
+
+  .reveal h3 {
+      color: #c1d192;
+      text-align: left;
+      padding-bottom: 10px;
+      font-family: Impact, sans-serif;
+  }
+  .reveal h4 {
+      color: #c1d192;
+      text-align: left;
+      padding-bottom: 10px;
+      font-family: Impact, sans-serif;
+  }
+  .reveal h5 {
+      color: #c1d192;
+      text-align: left;
+      padding-bottom: 10px;
+      font-family: Impact, sans-serif;
+  }
 </style>
+
+
 
 ```{r, setup, include=FALSE}
 knitr::opts_chunk$set(cache=TRUE,echo=FALSE,message=FALSE,comment="")
@@ -55,7 +76,8 @@ testoff$diff <- (testoff$solo_competitive_rank.y-testoff$solo_competitive_rank.x
 testjungle$diff <- (testjungle$solo_competitive_rank.y-testjungle$solo_competitive_rank.x)
 testunknown$diff <- (testunknown$solo_competitive_rank.y-testunknown$solo_competitive_rank.x)
 
-
+possar <- list(test_mid,testsafe,testoff,testjungle)
+pos_list <- c("midspelare","safelanespelare","hardlanespelare","djungelspelare")
 
 #logit <- function(x) {
 #model <- model <- glm(win~diff, family=binomial(link='logit'), data=x)
@@ -73,9 +95,21 @@ testunknown$diff <- (testunknown$solo_competitive_rank.y-testunknown$solo_compet
 #logit(testoff)
 
 
-possar <- list(test_mid,testsafe,testoff,testjungle)
-pos_list <- c("midspelare","safelanespelare","hardlanespelare","djungelspelare")
-# mapply(my_plot, possar, pos_list)
+logit <- function(x) {
+model <- model <- glm(win~diff, family=binomial(link='logit'), data=x)
+exp(cbind(coef(model), confint(model)))  
+}
+
+poss <- list(test_mid,testsafe,testoff,testjungle)
+odds <- lapply(poss, logit)
+ratios <- as.data.frame(do.call(rbind, odds))
+#logit(testoff)
+ratios <- ratios[-c(1,3,5,7),]
+rownames(ratios) <- c("Middiff", "Safediff", "Hardlanediff", "Djungeldiff")
+colnames(ratios) <- c("boxOdds", "boxCILow" ,"boxCIHigh")
+
+boxLabels = c("Middiff", "Safediff", "Hardlanelanediff", "Djungeldiff")
+ratios$yAxis = length(boxLabels):1
 
 
 
@@ -112,7 +146,7 @@ print(c(accuracy= acc, cutoff = cutoff))
 
 ```
 
-Syfte & Fråge
+### Syfte & Fråge
 
 
 - Vilka faktorer spelar storst roll gällande valet av favoritrestaurang?
@@ -120,70 +154,153 @@ Syfte & Fråge
 - Till exempel hur påverkar , valet av favoritrestaurang.
 
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 
 ---
 
-Minimap
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+### Centrala begrepp
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ---
 
-Lane
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+### Centrala begrepp forts.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ---
 
-Data
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+### Data
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ---
 
+### Metod
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-```{r, echo=FALSE,fig.width=7.15,fig.height=7.15}
+---
+
+### ROC
+
+```{r, echo=FALSE,fig.width=6.4,fig.height=6.4}
+
+load(file="datapre.rda")
+fit2 = glm(income ~.-relationship, family = binomial(logit), 
+           data = data$train)
+fitpreds = predict(fit2,newdata=data$val,type="response")
+fitpred = prediction(fitpreds,data$val$income)
+fitperf = performance(fitpred,"tpr","fpr")
+
+plot(fitperf,col="blue",lwd=2,main="ROC-kurva exempel", cex = 25, ylab = "Andel Sant positiv", xlab= "Andel Falskt positiv")
+abline(0,1)
+
+```
+
+---
+
+### Resultat mid
+
+```{r, echo=FALSE,fig.width=6.4,fig.height=6.4}
 
 ggplot(possar[[1]], aes(x=diff, y=win)) +
   geom_point() + stat_smooth(method="glm", method.args = list(family = binomial(link = "logit")), se=FALSE) +
   ggtitle(paste0("Logistisk regression för ", pos_list[1])) +
   labs(x="MMR-differens mot laget", y="Vinstsannolikhet")  +
-  theme(panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"), plot.title =  element_text(size = 35, face = "bold")) +
-  theme_bw()
+  theme_bw() +
+  theme(panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),axis.text=element_text(size=13), axis.title=element_text(size=16), plot.title =  element_text(size = 20, face = "bold"))
 
 ```
 
 ---
-Resultat 2
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### Resultat safelane
+
+```{r, echo=FALSE,fig.width=6.4,fig.height=6.4}
+
+ggplot(possar[[2]], aes(x=diff, y=win)) +
+  geom_point() + stat_smooth(method="glm", method.args = list(family = binomial(link = "logit")), se=FALSE) +
+  ggtitle(paste0("Logistisk regression för ", pos_list[2])) +
+  labs(x="MMR-differens mot laget", y="Vinstsannolikhet")  +
+  theme_bw() +
+  theme(panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),axis.text=element_text(size=13), axis.title=element_text(size=16), plot.title =  element_text(size = 20, face = "bold"))
+  
+
+```
 
 ----
 
-Resultat 3
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+### Resultat hardlane
+
+```{r, echo=FALSE,fig.width=6.4,fig.height=6.4}
+
+ggplot(possar[[3]], aes(x=diff, y=win)) +
+  geom_point() + stat_smooth(method="glm", method.args = list(family = binomial(link = "logit")), se=FALSE) +
+  ggtitle(paste0("Logistisk regression för ", pos_list[3])) +
+  labs(x="MMR-differens mot laget", y="Vinstsannolikhet")  +
+  theme_bw() +
+  theme(panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),axis.text=element_text(size=13), axis.title=element_text(size=16), plot.title =  element_text(size = 20, face = "bold"))
+
+```
 
 ---
 
+### Resultat djungel
 
-```{r, echo=FALSE,fig.width=7.1,fig.height=7.1}
+```{r, echo=FALSE,fig.width=6.4,fig.height=6.4}
 
-plot(prf,col="blue")
-title(main = "ROC kurva för hardlanespelare", xlab="", ylab="")
+ggplot(possar[[4]], aes(x=diff, y=win)) +
+  geom_point() + stat_smooth(method="glm", method.args = list(family = binomial(link = "logit")), se=FALSE) +
+  ggtitle(paste0("Logistisk regression för ", pos_list[4])) +
+  labs(x="MMR-differens mot laget", y="Vinstsannolikhet")  +
+  theme_bw() +
+  theme(panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),axis.text=element_text(size=13), axis.title=element_text(size=16), plot.title =  element_text(size = 20, face = "bold"))
+
+```
+
+---
+
+### Resultat oddskvoter
+
+```{r, echo=FALSE,fig.width=6.4,fig.height=6.4}
+
+  nr <- nrow(ratios)  # find out how many rows all together
+  with(ratios, {# this allows entering your commands more succinctly
+    # first you could set up the plot so you can select the order of drawing
+    plot(1:nr, boxOdds, ylim = c(0.9990, 1.001), type = 'n', xaxt = 'n', xlab = '', main="Oddskvot och 95% CL för de förklarande variablerna", cex = 25, ylab = 'Oddskvot', frame.plot = TRUE, panel.first = grid(nx = NA, ny = NULL))
+    arrows(1:nr, boxCILow, 1:nr, boxCIHigh, length = 0.05, angle = 90, code = 3, col = yAxis) 
+    # you could use arrows above but you don't want ends so segments is easier
+    #segments(1:nr, boxCILow, 1:nr, boxCIHigh, col = yAxis)
+    # add your points
+    points(1:nr, boxOdds, pch = 19, cex = 1)
+    axis(1, seq(1, 4, by = 1), rownames(ratios))
+  })
+  abline(h = 1.0)
+
+```
+
+---
+
+### Resultat ROC
+
+```{r, echo=FALSE,fig.width=6.4,fig.height=6.4}
+
+plot(prf,col="blue",lwd=2,main="ROC kurva för hardlanespelare", cex = 25, ylab = "Andel sant positiv", xlab= "Andel Falsk positiv")
+#title(main = "ROC kurva för hardlanespelare", xlab="", ylab="")
 abline(0,1)
  legend(0.45,0.45,c(maxauct),border="white",cex=1.3, pt.cex=1,box.col = "white")
 ```
 
+---
+
+### Slutsats
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ---
 
-Slutsats
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
---- 
-Diskussion
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+### Diskussion
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ---
-Frågor?
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+### Frågor?
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 

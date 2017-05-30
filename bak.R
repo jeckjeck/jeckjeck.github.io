@@ -1,5 +1,9 @@
   title: "Roll prioritering för högst vinstsannolikhet i Dota2"
 author: "Joakim Bäcklund Johan Bothin"
+# title       : Tauntauns
+# subtitle    : Imagery and Utility In Popular Culture
+# author      : Jonathan Katz, Therese Donovan, and Michelle Brown
+# job         : Information Dissemination and Outreach
 highlighter: highlight.js
 output: html_document
 knit: slidify::knit2slides
@@ -7,6 +11,8 @@ mode: selfcontained
 hitheme: tomorrow
 widgets: mathjax
 framework   : io2012
+
+# glöm inte slidify!
 ---
   <style>
   .title-slide {
@@ -161,9 +167,20 @@ ggplot(possar[[1]], aes(x=diff, y=win)) +
   Resultat 2
 
 
----
+  0%&nbsp;
+</div>
   
-  Resultat 3
+  <!--</td>
+  <td align=right name="poang_box" style="display:none;">-->
+  <div name="poang_box" style="display:none;">
+  <table border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+  <td name="horsepoang_2" id="horsepoang_2_2" class="minastreck_odds">
+
+
+
+  16%&nbsp;
+ltat 3
 
 --- 
   
