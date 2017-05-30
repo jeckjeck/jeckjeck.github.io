@@ -129,7 +129,7 @@ Vilken inverkan på matchresultatet har skillnaden i MMR mellan spelare i ett la
 
 >  - Spelare med högre MMR än sina lagkamrater bör undvika spela på hardlane
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 ---
 

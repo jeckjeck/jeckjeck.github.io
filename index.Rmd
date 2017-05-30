@@ -161,7 +161,7 @@ MMRs och lanes betydelse för matchresultat
 
 > - MMR - Skicklighetspoäng
 
-> - Lanes - vägar mellan baserna
+> - Lanes - vägar emellan baserna
 
 <br><br><br><br><br><br><br><br><br><br><br>
 
@@ -296,7 +296,7 @@ abline(0,1)
 
 ### Slutsats
 
-Vilken inverkan på matchresultatet har skillnaden i MMR mellan spelare i ett lag i förhållande till vilken lane spelaren oftast vistas på?
+Vilken inverkan på matchresultatet har skillnaden i MMR emellan spelare i ett lag i förhållande till vilken lane spelaren oftast vistas på?
 
 <br><br>
 
