@@ -46,20 +46,18 @@ framework   : io2012
 
 <br><br>
 
-- Vilken inverkan på matchresultatet har skillnaden i MMR mellan spelare i ett lag i förhållande till vilken lane spelaren oftast vistas på?
+MMRs och lanes betydelse för matchresultat
 
-
-
-
+ 
 <br><br><br><br><br><br><br><br><br>
 
 ---
 
 ### Centrala begrepp
 
-MMR - Skicklighetspoäng
+> - MMR - Skicklighetspoäng
 
-Lanes - vägar mellan baserna
+> - Lanes - vägar mellan baserna
 
 <br><br><br><br><br><br><br><br><br><br><br>
 
@@ -124,7 +122,14 @@ Lanes - vägar mellan baserna
 ---
 
 ### Slutsats
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+Vilken inverkan på matchresultatet har skillnaden i MMR mellan spelare i ett lag i förhållande till vilken lane spelaren oftast vistas på?
+
+<br><br>
+
+>  - Spelare med högre MMR än sina lagkamrater bör undvika spela på hardlane
+
+<br><br><br><br><br><br><br><br>
 
 ---
 
