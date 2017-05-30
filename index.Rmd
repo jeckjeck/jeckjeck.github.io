@@ -174,6 +174,11 @@ MMRs och lanes betydelse för matchresultat
 ---
 
 ### Data
+
+>  - Opendota api
+
+>  - Data från 7000 matcher samlades in
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ---
@@ -307,6 +312,11 @@ Vilken inverkan på matchresultatet har skillnaden i MMR emellan spelare i ett l
 ---
 
 ### Diskussion
+
+>  - Bättre klassificering hade troligtvis gett ett mer signifikant resultat
+
+>  - Proffsspelare skulle vara lättare att analysera men har liten variation i MMR 
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ---
