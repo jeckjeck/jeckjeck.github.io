@@ -57,7 +57,7 @@ MMRs och lanes betydelse för matchresultat
 
 > - MMR - Skicklighetspoäng
 
-> - Lanes - vägar mellan baserna
+> - Lanes - vägar emellan baserna
 
 <br><br><br><br><br><br><br><br><br><br><br>
 
@@ -70,6 +70,11 @@ MMRs och lanes betydelse för matchresultat
 ---
 
 ### Data
+
+>  - Opendota api
+
+>  - Data från 7000 matcher samlades in
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ---
@@ -81,49 +86,49 @@ MMRs och lanes betydelse för matchresultat
 
 ### Metod forts. ROC
 
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png)
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png)
 
 ---
 
 ### Resultat mid
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
 
 ---
 
 ### Resultat safelane
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
+![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3-1.png)
 
 ----
 
 ### Resultat hardlane
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
+![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4-1.png)
 
 ---
 
 ### Resultat djungel
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-5](assets/fig/unnamed-chunk-5-1.png)
 
 ---
 
 ### Resultat oddskvoter
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6-1.png)
 
 ---
 
 ### Resultat ROC
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7](assets/fig/unnamed-chunk-7-1.png)
 
 ---
 
 ### Slutsats
 
-Vilken inverkan på matchresultatet har skillnaden i MMR mellan spelare i ett lag i förhållande till vilken lane spelaren oftast vistas på?
+Vilken inverkan på matchresultatet har skillnaden i MMR emellan spelare i ett lag i förhållande till vilken lane spelaren oftast vistas på?
 
 <br><br>
 
@@ -134,6 +139,11 @@ Vilken inverkan på matchresultatet har skillnaden i MMR mellan spelare i ett la
 ---
 
 ### Diskussion
+
+>  - Bättre klassificering hade troligtvis gett ett mer signifikant resultat
+
+>  - Proffsspelare skulle vara lättare att analysera men har liten variation i MMR 
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ---
