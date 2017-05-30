@@ -46,7 +46,9 @@ framework   : io2012
 
 <br><br>
 
-MMRs och lanes betydelse för matchresultat
+Vilken inverkan på matchresultatet har skillnaden i MMR mellan spelare i
+ett lag i förhållande till vilken lane spelaren oftast vistas på?
+
 
  
 <br><br><br><br><br><br><br><br><br>
@@ -55,11 +57,13 @@ MMRs och lanes betydelse för matchresultat
 
 ### Centrala begrepp
 
+> - Dota2, vad är det?
+
 > - MMR - Skicklighetspoäng
 
 > - Lanes - vägar emellan baserna
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 
 ---
 
@@ -71,16 +75,22 @@ MMRs och lanes betydelse för matchresultat
 
 ### Data
 
->  - Opendota api
+>  - Opendota
 
->  - Data från 7000 matcher samlades in
+>  - Data från 7000 matcher
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
 
 ---
 
 ### Metod
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+>  - Binär logistisk regression
+
+>  - Receiver Operating Characteristic curve - ROC kurva 
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
 
 ---
 
@@ -142,9 +152,11 @@ Vilken inverkan på matchresultatet har skillnaden i MMR emellan spelare i ett l
 
 >  - Bättre klassificering hade troligtvis gett ett mer signifikant resultat
 
->  - Proffsspelare skulle vara lättare att analysera men har liten variation i MMR 
+>  - Svårt att klassifiera
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+>  - Proffsspelare skulle vara lättare att analysera men har liten variation i MMR
+
+<br><br><br><br><br><br><br><br><br>
 
 ---
 ### Frågor?

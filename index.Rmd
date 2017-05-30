@@ -167,7 +167,7 @@ ett lag i förhållande till vilken lane spelaren oftast vistas på?
 
 > - Lanes - vägar emellan baserna
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 
 ---
 
@@ -183,12 +183,18 @@ ett lag i förhållande till vilken lane spelaren oftast vistas på?
 
 >  - Data från 7000 matcher
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
 
 ---
 
 ### Metod
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+>  - Binär logistisk regression
+
+>  - Receiver Operating Characteristic curve - ROC kurva 
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
 
 ---
 
@@ -323,7 +329,7 @@ Vilken inverkan på matchresultatet har skillnaden i MMR emellan spelare i ett l
 
 >  - Proffsspelare skulle vara lättare att analysera men har liten variation i MMR
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 
 ---
 ### Frågor?
