@@ -185,7 +185,7 @@ Lanes - vägar mellan baserna
 
 ---
 
-### ROC
+### Metod forts. ROC
 
 ```{r, echo=FALSE,fig.width=6.4,fig.height=6.4}
 
