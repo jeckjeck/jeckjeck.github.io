@@ -69,7 +69,7 @@ ett lag i förhållande till vilken lane spelaren oftast vistas på?
 
 ### Karta
 
-<img src="minimap.jpg" height="463px" width="400px" />
+<img src="minimap.jpg" height="459px" width="400px" />
 
 ---
 
@@ -84,7 +84,7 @@ ett lag i förhållande till vilken lane spelaren oftast vistas på?
 >  - Alla spelare visar inte sin MMR
 
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 ---
 
