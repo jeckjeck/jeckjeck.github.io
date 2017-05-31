@@ -57,7 +57,7 @@ ett lag i förhållande till vilken lane spelaren oftast vistas på?
 
 ### Centrala begrepp
 
-> - Dota2, vad är det?
+  - Dota2 - vad är det?
 
 > - MMR - Skicklighetspoäng
 
@@ -75,9 +75,14 @@ ett lag i förhållande till vilken lane spelaren oftast vistas på?
 
 ### Data
 
->  - Opendota
+   - Opendota
 
 >  - Data från 7000 matcher
+
+>  - MMR differens emellan laget och spelarna
+
+>  - Alla spelare visar inte sin MMR
+
 
 <br><br><br><br><br><br><br><br><br><br><br>
 
@@ -85,7 +90,7 @@ ett lag i förhållande till vilken lane spelaren oftast vistas på?
 
 ### Metod
 
->  - Binär logistisk regression
+Binär logistisk regression
 
 >  - Receiver Operating Characteristic curve - ROC kurva 
 
@@ -150,7 +155,7 @@ Vilken inverkan på matchresultatet har skillnaden i MMR emellan spelare i ett l
 
 ### Diskussion
 
->  - Bättre klassificering hade troligtvis gett ett mer signifikant resultat
+Bättre klassificering hade troligtvis gett ett mer signifikant resultat
 
 >  - Svårt att klassifiera
 

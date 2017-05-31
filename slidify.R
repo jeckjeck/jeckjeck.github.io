@@ -1,0 +1,11 @@
+#install.packages("devtools")
+library(devtools)
+#install_github('ramnathv/slidify', ref = github_pull(425))
+devtools::install_github('muschellij2/slidify')
+install_github('ramnathv/slidifyLibraries')
+#devtools::install_github('ramnathv/slidify@fix-encode')
+#install.packages('stringr')
+library(slidify)
+#author("Joakim Johan",use_git = FALSE)
+#slidify("index.Rmd")
+
